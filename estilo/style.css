@@ -24,3 +24,26 @@ body {
 main {
     padding: 32px 5%;
 }
+
+.cabecalho {
+  background-color: var(--verde);
+  color: var(--branco);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+ 
+.cabecalho img {
+  width: 75px;
+  height: auto;
+}
+ 
+.cabecalho h1 {
+  font-size: 29px;
+  font-weight: 600;
+  margin-left: 16px;
+  letter-spacing: 0.5px;
+}
