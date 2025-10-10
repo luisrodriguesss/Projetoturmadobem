@@ -80,3 +80,29 @@ main {
 .cabecalho nav a:hover {
   color: var(--laranja);
 }
+
+section {
+    margin-bottom: 48px;
+    background: var(--branco);
+    border-radius: 16px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    padding: 32px;
+}
+ 
+section h2 {
+    color: var(--laranja);
+    font-size: 25px;
+    margin-bottom: 16px;
+    border-left: 6px solid var(--verde-limao);
+    padding-left: 8px;
+}
+ 
+section h3 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+ 
+section p {
+    margin-top: 8px;
+}
+ 
