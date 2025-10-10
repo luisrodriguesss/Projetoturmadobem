@@ -47,3 +47,15 @@ main {
   margin-left: 16px;
   letter-spacing: 0.5px;
 }
+
+.cabecalho nav {
+  display: flex;
+  gap: 19px;
+  flex-wrap: wrap;
+}
+ 
+.cabecalho nav a {
+  color: var(--branco);
+  text-decoration: none;
+  font-weight: 500;
+}
