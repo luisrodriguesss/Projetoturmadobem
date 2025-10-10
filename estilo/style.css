@@ -217,4 +217,66 @@ footer {
   color: #f97316;
  
 }
+
+.contato-form {
+  background: var(--branco);
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 40px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+ 
+.contato-form h2 {
+  color: var(--laranja);
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+ 
+.contato-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+ 
+.contato-form label {
+  font-weight: 500;
+  color: var(--texto);
+}
+ 
+.contato-form input,
+.contato-form textarea {
+  padding: 12px;
+  border: 1px solid var(--cinza);
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: var(--fonte);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  resize: none;
+}
+ 
+.contato-form input:focus,
+.contato-form textarea:focus {
+  border-color: var(--laranja);
+  box-shadow: 0 0 6px rgba(249, 115, 22, 0.3);
+  outline: none;
+}
+ 
+.contato-form button {
+  background: var(--verde);
+  color: var(--branco);
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+ 
+.contato-form button:hover {
+  background: var(--laranja);
+  transform: scale(1.03);
+}
  
