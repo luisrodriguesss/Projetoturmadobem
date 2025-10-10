@@ -105,4 +105,24 @@ section h3 {
 section p {
     margin-top: 8px;
 }
+
+.foto-principal {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    margin: 24px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+ 
+section img {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: 24px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+ 
+
  
