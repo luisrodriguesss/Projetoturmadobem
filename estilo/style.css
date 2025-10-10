@@ -123,6 +123,99 @@ section img {
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
- 
 
+.estatisticas {
+    text-align: center;
+}
+ 
+.estatisticas p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    background-color: var(--cinza-claro);
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+ 
+.estatisticas p:hover {
+    background-color: var(--laranja);
+    color: var(--branco);
+}
+ 
+aside {
+    background: var(--cinza-claro);
+    padding: 16px;
+    margin-top: 12px;
+    border-radius: 8px;
+}
+ 
+footer {
+    text-align: center;
+    background-color: var(--verde);
+    color: var(--texto);
+    padding: 16px;
+    font-weight: 500;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.05);
+}
+ 
+.integrantes-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+ 
+.integrantes-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 30px;
+}
+ 
+.integrante-card {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 260px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+ 
+.integrante-card:hover {
+    transform: translateY(-6px);
+}
+ 
+.integrante-card img {
+    width: 220px;
+    height: 220px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+ 
+.integrante-card h3 {
+    font-size: 20px;
+    color: #333;
+    margin-top: 5px;
+}
+ 
+.missao {
+    text-align: center;
+    margin-top: 60px;
+    padding: 20px;
+}
+ 
+.missao h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+ 
+.github a {
+  text-decoration: none;
+  color: #f97316;
+ 
+}
  
