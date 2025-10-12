@@ -43,3 +43,8 @@ A escolha das cores, tipografias e imagens foi feita cuidadosamente para **trans
 ## Estrutura do Projeto
 A organização dos arquivos segue uma estrutura simples e modular, separando o conteúdo (HTML) do estilo (CSS):
 
+---
+
+## Link do projeto - github
+https://github.com/luisrodriguesss/Projetoturmadobem
+
