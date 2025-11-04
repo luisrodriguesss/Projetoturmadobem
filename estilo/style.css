@@ -372,3 +372,28 @@ footer {
   }
 }
 
+@media (min-width: 1300px) {
+  main {
+    padding: 48px 12%;
+  }
+
+  section {
+    padding: 48px;
+  }
+
+  .cabecalho h1 {
+    font-size: 34px;
+  }
+
+  .cabecalho nav a {
+    font-size: 18px;
+  }
+
+  .integrante-card {
+    width: 280px;
+  }
+
+  .foto-principal {
+    max-width: 900px;
+  }
+}
