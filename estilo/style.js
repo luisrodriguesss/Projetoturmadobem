@@ -40,3 +40,41 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+const botaoToggle = document.createElement("button");
+botaoToggle.textContent = "Mostrar/Ocultar Estatísticas";
+botaoToggle.style.margin = "20px auto";
+botaoToggle.style.display = "block";
+botaoToggle.style.padding = "10px 20px";
+botaoToggle.style.background = "#a3c23e";
+botaoToggle.style.color = "#fff";
+botaoToggle.style.border = "none";
+botaoToggle.style.borderRadius = "8px";
+botaoToggle.style.cursor = "pointer";
+
+document.addEventListener("DOMContentLoaded", () => {
+  const main = document.querySelector("main");
+  const estatisticas = document.querySelector(".estatisticas");
+  if (estatisticas && main) {
+    main.insertAdjacentElement("beforeend", botaoToggle);
+
+    botaoToggle.addEventListener("click", () => {
+      estatisticas.style.display =
+        estatisticas.style.display === "none" ? "block" : "none";
+    });
+  }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const nomeSalvo = localStorage.getItem("nomeUsuario");
+  if (nomeSalvo) {
+    const header = document.querySelector("header h1");
+    const saudacao = document.createElement("p");
+    saudacao.textContent = `Bem-vindo de volta, ${nomeSalvo}! 😊`;
+    saudacao.style.fontSize = "16px";
+    saudacao.style.marginTop = "6px";
+    saudacao.style.color = "#222";
+    header.insertAdjacentElement("afterend", saudacao);
+  }
+});
+
+
