@@ -77,4 +77,36 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const estatisticas = document.querySelectorAll(".estatisticas p");
 
+  if (estatisticas.length > 0) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          estatisticas.forEach((p) => animarNumero(p));
+          observer.disconnect(); 
+        }
+      });
+    });
+
+    observer.observe(estatisticas[0]);
+  }
+
+  function animarNumero(elemento) {
+    const textoOriginal = elemento.textContent;
+    const numero = parseInt(textoOriginal.replace(/\D/g, ""));
+    let contador = 0;
+    const duracao = 2000; 
+    const passo = Math.ceil(numero / (duracao / 16));
+
+    const intervalo = setInterval(() => {
+      contador += passo;
+      if (contador >= numero) {
+        contador = numero;
+        clearInterval(intervalo);
+      }
+      elemento.textContent = textoOriginal.replace(/[0-9,.]+/, contador.toLocaleString("pt-BR"));
+    }, 16);
+  }
+});
