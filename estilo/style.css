@@ -105,4 +105,182 @@ section h3 {
 section p {
     margin-top: 8px;
 }
+<<<<<<< HEAD
  
+=======
+
+.foto-principal {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    margin: 24px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+ 
+section img {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: 24px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+.estatisticas {
+    text-align: center;
+}
+ 
+.estatisticas p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    background-color: var(--cinza-claro);
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+ 
+.estatisticas p:hover {
+    background-color: var(--laranja);
+    color: var(--branco);
+}
+ 
+aside {
+    background: var(--cinza-claro);
+    padding: 16px;
+    margin-top: 12px;
+    border-radius: 8px;
+}
+ 
+footer {
+    text-align: center;
+    background-color: var(--verde);
+    color: var(--texto);
+    padding: 16px;
+    font-weight: 500;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.05);
+}
+ 
+.integrantes-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+ 
+.integrantes-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 30px;
+}
+ 
+.integrante-card {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 260px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+ 
+.integrante-card:hover {
+    transform: translateY(-6px);
+}
+ 
+.integrante-card img {
+    width: 220px;
+    height: 220px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+ 
+.integrante-card h3 {
+    font-size: 20px;
+    color: #333;
+    margin-top: 5px;
+}
+ 
+.missao {
+    text-align: center;
+    margin-top: 60px;
+    padding: 20px;
+}
+ 
+.missao h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+ 
+.github a {
+  text-decoration: none;
+  color: #f97316;
+ 
+}
+
+.contato-form {
+  background: var(--branco);
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 40px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+ 
+.contato-form h2 {
+  color: var(--laranja);
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+ 
+.contato-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+ 
+.contato-form label {
+  font-weight: 500;
+  color: var(--texto);
+}
+ 
+.contato-form input,
+.contato-form textarea {
+  padding: 12px;
+  border: 1px solid var(--cinza);
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: var(--fonte);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  resize: none;
+}
+ 
+.contato-form input:focus,
+.contato-form textarea:focus {
+  border-color: var(--laranja);
+  box-shadow: 0 0 6px rgba(249, 115, 22, 0.3);
+  outline: none;
+}
+ 
+.contato-form button {
+  background: var(--verde);
+  color: var(--branco);
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+ 
+.contato-form button:hover {
+  background: var(--laranja);
+  transform: scale(1.03);
+}
+ 
+>>>>>>> da3d1c6520841109b2a09636a9e25913db399b77
