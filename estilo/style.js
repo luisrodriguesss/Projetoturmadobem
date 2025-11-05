@@ -11,10 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
     inputs.forEach((campo) => {
       if (campo.value.trim() === "") {
         valido = false;
-        mostrarErro(campo, "⚠️ Este campo é obrigatório");
+        mostrarErro(campo, "Este campo é obrigatório");
       } else if (campo.type === "email" && !validarEmail(campo.value)) {
         valido = false;
-        mostrarErro(campo, "⚠️ Digite um e-mail válido");
+        mostrarErro(campo, "Digite um e-mail válido");
       }
     });
 
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (nomeSalvo) {
     const header = document.querySelector("header h1");
     const saudacao = document.createElement("p");
-    saudacao.textContent = `Bem-vindo de volta, ${nomeSalvo}! 😊`;
+    saudacao.textContent = `Bem-vindo de volta, ${nomeSalvo}! `;
     saudacao.style.fontSize = "16px";
     saudacao.style.marginTop = "6px";
     saudacao.style.color = "#222";
