@@ -295,7 +295,7 @@ footer {
 
 .barra-pesquisa input {
     padding: 8px 12px;
-    border: 2px solid var(--verde); /* azul do logo */
+    border: 2px solid var(--verde); 
     border-radius: 20px;
     width: 200px;
     transition: 0.3s;
@@ -304,8 +304,8 @@ footer {
 
 .barra-pesquisa input:focus {
     outline: none;
-    width: 250px;
-    border-color: var var(--verde);
+    width: 250px; 
+    border-color: var(--laranja);
 }
 
 .barra-pesquisa button {
