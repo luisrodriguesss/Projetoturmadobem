@@ -110,3 +110,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 16);
   }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const campo = document.getElementById("campo-pesquisa");
+    const botao = document.getElementById("botao-pesquisa");
+
+    botao.addEventListener("click", () => {
+        const termo = campo.value.trim();
+        if (termo !== "") {
+            alert(`Você pesquisou por: ${termo}`);
+        } else {
+            alert("Digite algo para pesquisar!");
+        }
+    });
+});
