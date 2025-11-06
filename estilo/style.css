@@ -14,15 +14,15 @@
   padding: 0;
   box-sizing: border-box;
 }
- 
+
 body {
   font-family: var(--fonte);
   background-color: var(--cinza-claro);
   color: var(--texto);
 }
- 
+
 main {
-    padding: 32px 5%;
+  padding: 32px 5%;
 }
 
 .cabecalho {
@@ -35,12 +35,12 @@ main {
   flex-wrap: wrap;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
 }
- 
+
 .cabecalho img {
   width: 75px;
   height: auto;
 }
- 
+
 .cabecalho h1 {
   font-size: 29px;
   font-weight: 600;
@@ -53,7 +53,7 @@ main {
   gap: 19px;
   flex-wrap: wrap;
 }
- 
+
 .cabecalho nav a {
   color: var(--branco);
   text-decoration: none;
@@ -61,7 +61,7 @@ main {
   transition: all 0.3s ease;
   position: relative;
 }
- 
+
 .cabecalho nav a::after {
   content: "";
   position: absolute;
@@ -72,150 +72,151 @@ main {
   background-color: var(--laranja);
   transition: width 0.3s ease;
 }
- 
+
 .cabecalho nav a:hover::after {
   width: 100%;
 }
- 
+
 .cabecalho nav a:hover {
   color: var(--laranja);
 }
 
 section {
-    margin-bottom: 48px;
-    background: var(--branco);
-    border-radius: 16px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
-    padding: 32px;
+  margin-bottom: 48px;
+  background: var(--branco);
+  border-radius: 16px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  padding: 32px;
 }
- 
+
 section h2 {
-    color: var(--laranja);
-    font-size: 25px;
-    margin-bottom: 16px;
-    border-left: 6px solid var(--verde-limao);
-    padding-left: 8px;
+  color: var(--laranja);
+  font-size: 25px;
+  margin-bottom: 16px;
+  border-left: 6px solid var(--verde-limao);
+  padding-left: 8px;
 }
- 
+
 section h3 {
-    font-size: 20px;
-    margin-top: 20px;
+  font-size: 20px;
+  margin-top: 20px;
 }
- 
+
 section p {
-    margin-top: 8px;
+  margin-top: 8px;
 }
 
 .foto-principal {
-    display: block;
-    width: 100%;
-    max-width: 800px;
-    margin: 24px auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  margin: 24px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
- 
+
 section img {
-    display: block;
-    width: 100%;
-    max-width: 600px;
-    margin: 24px auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin: 24px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
+
 .estatisticas {
-    text-align: center;
+  text-align: center;
 }
- 
+
 .estatisticas p {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 10px 0;
-    background-color: var(--cinza-claro);
-    display: inline-block;
-    padding: 10px 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+  background-color: var(--cinza-claro);
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
- 
+
 .estatisticas p:hover {
-    background-color: var(--laranja);
-    color: var(--branco);
+  background-color: var(--laranja);
+  color: var(--branco);
 }
- 
+
 aside {
-    background: var(--cinza-claro);
-    padding: 16px;
-    margin-top: 12px;
-    border-radius: 8px;
+  background: var(--cinza-claro);
+  padding: 16px;
+  margin-top: 12px;
+  border-radius: 8px;
 }
- 
+
 footer {
-    text-align: center;
-    background-color: var(--verde);
-    color: var(--texto);
-    padding: 16px;
-    font-weight: 500;
-    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  background-color: var(--verde);
+  color: var(--texto);
+  padding: 16px;
+  font-weight: 500;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.05);
 }
- 
+
 .integrantes-section {
-    text-align: center;
-    padding: 40px 20px;
+  text-align: center;
+  padding: 40px 20px;
 }
- 
+
 .integrantes-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 50px;
-    margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 30px;
 }
- 
+
 .integrante-card {
-    background-color: #fff;
-    border-radius: 16px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    width: 260px;
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.3s ease;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 260px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
 }
- 
+
 .integrante-card:hover {
-    transform: translateY(-6px);
+  transform: translateY(-6px);
 }
- 
+
 .integrante-card img {
-    width: 220px;
-    height: 220px;
-    border-radius: 8px;
-    object-fit: cover;
-    margin-bottom: 12px;
+  width: 220px;
+  height: 220px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 12px;
 }
- 
+
 .integrante-card h3 {
-    font-size: 20px;
-    color: #333;
-    margin-top: 5px;
+  font-size: 20px;
+  color: #333;
+  margin-top: 5px;
 }
- 
+
 .missao {
-    text-align: center;
-    margin-top: 60px;
-    padding: 20px;
+  text-align: center;
+  margin-top: 60px;
+  padding: 20px;
 }
- 
+
 .missao h2 {
-    margin-bottom: 15px;
-    color: #333;
+  margin-bottom: 15px;
+  color: #333;
 }
- 
+
 .github a {
   text-decoration: none;
   color: #f97316;
- 
+
 }
 
 .linkedin a {
@@ -231,25 +232,25 @@ footer {
   max-width: 600px;
   margin: 0 auto;
 }
- 
+
 .contato-form h2 {
   color: var(--laranja);
   font-size: 26px;
   margin-bottom: 20px;
   text-align: center;
 }
- 
+
 .contato-form form {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
- 
+
 .contato-form label {
   font-weight: 500;
   color: var(--texto);
 }
- 
+
 .contato-form input,
 .contato-form textarea {
   padding: 12px;
@@ -260,14 +261,14 @@ footer {
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
   resize: none;
 }
- 
+
 .contato-form input:focus,
 .contato-form textarea:focus {
   border-color: var(--laranja);
   box-shadow: 0 0 6px rgba(249, 115, 22, 0.3);
   outline: none;
 }
- 
+
 .contato-form button {
   background: var(--verde);
   color: var(--branco);
@@ -279,49 +280,50 @@ footer {
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
- 
+
 .contato-form button:hover {
   background: var(--laranja);
   transform: scale(1.03);
 }
- 
+
 .barra-pesquisa {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-    gap: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 5px;
 }
 
 .barra-pesquisa input {
-    padding: 8px 12px;
-    border: 2px solid var(--verde); 
-    border-radius: 20px;
-    width: 200px;
-    transition: 0.3s;
-    font-size: 1rem;
+  padding: 8px 12px;
+  border: 2px solid var(--verde);
+  border-radius: 20px;
+  width: 200px;
+  transition: 0.3s;
+  font-size: 1rem;
 }
 
 .barra-pesquisa input:focus {
-    outline: none;
-    width: 250px; 
-    border-color: var(--laranja);
+  outline: none;
+  width: 250px;
+  border-color: var(--laranja);
 }
 
 .barra-pesquisa button {
-    background-color: var(--verde);
-    border: none;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-    color: white;
-    font-size: 1rem;
-    transition: 0.3s;
+  background-color: var(--verde);
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  color: white;
+  font-size: 1rem;
+  transition: 0.3s;
 }
 
 .barra-pesquisa button:hover {
-    background-color: var(--laranja);
+  background-color: var(--laranja);
+  transition: 0.3s;
 }
 
 
@@ -356,7 +358,7 @@ footer {
     font-size: 22px;
   }
 
-  section img, 
+  section img,
   .foto-principal {
     max-width: 100%;
     height: auto;
