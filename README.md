@@ -52,3 +52,9 @@ O projeto é composto por páginas HTML interligadas, estilizadas com CSS extern
 - Navegador atualizado (Google Chrome, Firefox, Edge ou Safari).  
 - Conexão local com os arquivos de estilo e script (sem necessidade de servidor).
 
+## Nosso Time 
+- git hub 
+https://github.com/luisrodriguesss - Luis Rodrigues 1TDSPB rm567918 
+https://github.com/luizkichimoto - Luiz Kichimoto 1TDSPB rm567726
+https://github.com/GabrielCreates - Gabriel Rocha 1TDSPB rm567023
+
