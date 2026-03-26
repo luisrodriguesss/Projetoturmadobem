@@ -8,12 +8,16 @@ export default function Home() {
       <section>
         <h2>Transformando sorrisos, mudando vidas.</h2>
 
-        <img src={img1} alt="imagem turma do bem" />
+        <img
+          className="foto-principal"
+          src={img1}
+          alt="imagem turma do bem"
+        />
 
-        <aside>
+        <aside className="aside-1">
           <p>
-            A Turma do Bem oferece triagens e tratamentos odontológicos
-            gratuitos para pessoas em vulnerabilidade social.
+            A Turma do Bem oferece triagens e tratamentos odontológicos gratuitos
+            para pessoas em vulnerabilidade social.
           </p>
         </aside>
       </section>
@@ -23,17 +27,21 @@ export default function Home() {
 
         <div>
           <h3>Crianças de 11 a 17 anos</h3>
-          <p>
-            Jovens em situação de vulnerabilidade social, sem condições
-            financeiras para arcar com os custos do tratamento que possuem
-            problemas bucais graves.
-          </p>
+          <aside>
+            <p>
+              Jovens em situação de vulnerabilidade social, sem condições
+              financeiras para arcar com os custos do tratamento que possuem
+              problemas bucais graves.
+            </p>
+          </aside>
 
           <h3>Mulheres trans e cis</h3>
-          <p>
-            Mulheres vítimas de violência, com dentição afetada pelas
-            agressões sofridas.
-          </p>
+          <aside>
+            <p>
+              Mulheres vítimas de violência, com dentição afetada pelas
+              agressões sofridas.
+            </p>
+          </aside>
         </div>
       </section>
 
@@ -42,25 +50,33 @@ export default function Home() {
 
         <div>
           <h3>Dentista do Bem</h3>
-          <p>
-            Programa que oferece atendimento odontológico gratuito para jovens
-            até 18 anos em situação de vulnerabilidade social.
-          </p>
-          <img src={dentista} alt="Dentista do Bem" />
+          <aside>
+            <p>
+              O Dentista do Bem é o principal programa da Turma do Bem. Ele nasceu
+              para cuidar de crianças e adolescentes entre 11 e 17 anos que vivem
+              em situação de vulnerabilidade social.
+            </p>
+          </aside>
+
+          <img src={dentista} alt="Imagem Dentista" />
         </div>
 
         <div>
           <h3>Apolônias do Bem</h3>
-          <p>
-            Atendimento para mulheres vítimas de violência, devolvendo saúde,
-            autoestima e dignidade.
-          </p>
-          <img src={apolonias} alt="Apolônias do Bem" />
+          <aside>
+            <p>
+              O Apolônias do Bem oferece tratamento odontológico gratuito para
+              mulheres cis e trans que tiveram seus sorrisos afetados por
+              situações de violência.
+            </p>
+          </aside>
+
+          <img src={apolonias} alt="Imagem Apolonias" />
         </div>
       </section>
 
-      <section>
-        <h2>Estatísticas</h2>
+      <section className="estatisticas">
+        <h2>Turma do Bem - Estatísticas</h2>
         <p>+82 mil jovens atendidos</p>
         <p>+1.1 mil mulheres atendidas</p>
         <p>+18 mil dentistas voluntários</p>
