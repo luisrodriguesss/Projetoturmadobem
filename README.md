@@ -1,62 +1,73 @@
-# Turma do Bem - Projeto Front-End
+# React + TypeScript + Vite
 
-## Descrição
-Este projeto tem como objetivo o desenvolvimento do **site institucional da ONG Turma do Bem**, organização voltada para oferecer triagens e tratamentos odontológicos gratuitos a pessoas em situação de vulnerabilidade social.  
-O site apresenta informações sobre os programas da ONG, seus públicos atendidos, estatísticas de impacto e formas de contato.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Estrutura do Projeto
-O projeto é composto por páginas HTML interligadas, estilizadas com CSS externo e scripts simples em JavaScript.  
+Currently, two official plugins are available:
 
-**Páginas principais:**
-- `index.html` — Página inicial, com apresentação da ONG, áreas de atuação e estatísticas.
-- `pages/sobre.html` — Informações sobre a missão e a história da ONG.
-- `pages/faq.html` — Perguntas frequentes sobre os projetos e funcionamento.
-- `pages/contato.html` — Formulário para contato direto.
-- `pages/quem-somos.html` — Apresentação da equipe e valores institucionais.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-**Principais diretórios:**
-├── index.html
-├── pages/
-│ ├── sobre.html
-│ ├── faq.html
-│ ├── contato.html
-│ └── quem-somos.html
-├── estilo/
-│ ├── style.css
-│ ├── style.js
-│ └── img/
-│ ├── logo.png
-│ ├── imagem-dentista.png
-│ ├── imagem-apolonias.png
-│ └── img1.png
+## React Compiler
 
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Funcionalidades
-- Layout responsivo com HTML5 e CSS3.  
-- Navegação clara e intuitiva entre páginas.  
-- Seção de estatísticas com dados sobre o impacto social da ONG.  
-- Barra de pesquisa funcional no cabeçalho.  
-- Design coerente com as cores e identidade visual da ONG.  
+## Expanding the ESLint configuration
 
-## Tecnologias Utilizadas
-- **HTML5** — Estrutura semântica das páginas.  
-- **CSS3 (Flexbox e Grid)** — Estilização e responsividade.  
-- **JavaScript (básico)** — Interatividade e elementos dinâmicos.  
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-## Instruções de Uso
-1. Clone ou baixe este repositório em seu computador.  
-2. Mantenha a estrutura de pastas conforme o projeto.  
-3. Abra o arquivo `index.html` em qualquer navegador moderno.  
+```js
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
 
-## Requisitos
-- Navegador atualizado (Google Chrome, Firefox, Edge ou Safari).  
-- Conexão local com os arquivos de estilo e script (sem necessidade de servidor).
+      // Remove tseslint.configs.recommended and replace with this
+      tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      tseslint.configs.stylisticTypeChecked,
 
-## Nosso Time 
-- git hub 
-https://github.com/luisrodriguesss - Luis Rodrigues 1TDSPB rm567918 
-https://github.com/luizkichimoto - Luiz Kichimoto 1TDSPB rm567726
-https://github.com/GabrielCreates - Gabriel Rocha 1TDSPB rm567023
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
 
-## Link do nosso repositório 
-https://github.com/luisrodriguesss/Projetoturmadobem
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
+
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
