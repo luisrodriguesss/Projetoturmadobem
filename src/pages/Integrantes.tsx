@@ -1,8 +1,24 @@
+import { useNavigate } from "react-router-dom"
 import luis from "../../estilo/img/fotoluis.png"
 import kichimoto from "../../estilo/img/fotokichimoto.png"
 import gabriel from "../../estilo/img/fotogabriel.png"
 
+type Integrante = {
+  id: string
+  nome: string
+  rm: string
+  foto: string
+}
+
+export const listaIntegrantes: Integrante[] = [
+  { id: "luis", nome: "Luis Fillipe Seripieri", rm: "RM567918", foto: luis },
+  { id: "kichimoto", nome: "Luiz Felipe Kichimoto", rm: "RM567726", foto: kichimoto },
+  { id: "gabriel", nome: "Gabriel Rocha Souza", rm: "RM567023", foto: gabriel },
+]
+
 export default function Integrantes() {
+  const navegar = useNavigate()
+
   return (
     <main>
       <section className="apresentacao">
@@ -19,20 +35,17 @@ export default function Integrantes() {
         <h2>Nosso Time</h2>
 
         <div className="integrantes-container">
-          <div className="integrante-card">
-            <img src={luis} alt="Foto do Luis" />
-            <h3>Luis Fillipe Seripieri RM567918</h3>
-          </div>
-
-          <div className="integrante-card">
-            <img src={kichimoto} alt="Foto do Kichimoto" />
-            <h3>Luiz Felipe Kichimoto RM567726</h3>
-          </div>
-
-          <div className="integrante-card">
-            <img src={gabriel} alt="Foto do Gabriel" />
-            <h3>Gabriel Rocha Souza RM567023</h3>
-          </div>
+          {listaIntegrantes.map((integrante) => (
+            <div
+              key={integrante.id}
+              className="integrante-card"
+              onClick={() => navegar(`/integrantes/${integrante.id}`)}
+            >
+              <img src={integrante.foto} alt={`Foto de ${integrante.nome}`} />
+              <h3>{integrante.nome}</h3>
+              <p>{integrante.rm}</p>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -48,37 +61,18 @@ export default function Integrantes() {
       <section>
         <h3>Github</h3>
         <nav className="github">
-          <a href="https://github.com/luisrodriguesss" target="_blank">
-            luisrodriguesss
-          </a>{" "}
-          |{" "}
-          <a href="https://github.com/luizkichimoto" target="_blank">
-            luizkichimoto
-          </a>{" "}
-          |{" "}
-          <a href="https://github.com/GabrielCreates" target="_blank">
-            gabrielcreates
-          </a>
+          <a href="https://github.com/luisrodriguesss" target="_blank" rel="noreferrer">luisrodriguesss</a>{" "}|{" "}
+          <a href="https://github.com/luizkichimoto" target="_blank" rel="noreferrer">luizkichimoto</a>{" "}|{" "}
+          <a href="https://github.com/GabrielCreates" target="_blank" rel="noreferrer">gabrielcreates</a>
         </nav>
       </section>
 
       <section>
         <h3>Linkedin</h3>
         <nav className="linkedin">
-          <a
-            href="https://www.linkedin.com/in/luis-seripieri-1bb360395/"
-            target="_blank"
-          >
-            Luis Rodrigues
-          </a>{" "}
-          |{" "}
-          <a href="https://www.linkedin.com/feed/" target="_blank">
-            Luiz Kichimoto
-          </a>{" "}
-          |{" "}
-          <a href="https://www.linkedin.com/feed/" target="_blank">
-            Gabriel Rocha
-          </a>
+          <a href="https://www.linkedin.com/in/luis-seripieri-1bb360395/" target="_blank" rel="noreferrer">Luis Rodrigues</a>{" "}|{" "}
+          <a href="https://www.linkedin.com/feed/" target="_blank" rel="noreferrer">Luiz Kichimoto</a>{" "}|{" "}
+          <a href="https://www.linkedin.com/feed/" target="_blank" rel="noreferrer">Gabriel Rocha</a>
         </nav>
       </section>
     </main>
