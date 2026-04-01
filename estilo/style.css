@@ -327,6 +327,13 @@ footer {
   transition: 0.3s;
 }
 
+.erro {
+  color: red;
+  font-size: 14px;
+  margin-top: 4px;
+  display: block;
+}
+
 
 @media (max-width: 600px) {
   .cabecalho {
