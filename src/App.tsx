@@ -9,6 +9,7 @@ import Faq from "./pages/Faq"
 import Contato from "./pages/Contato"
 import Integrantes from "./pages/Integrantes"
 import IntegranteDetalhe from "./pages/IntegranteDetalhe"
+import Solucao from "./pages/Solucao"
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/contato" element={<Contato />} />
         <Route path="/integrantes" element={<Integrantes />} />
         <Route path="/integrantes/:id" element={<IntegranteDetalhe />} />
+        <Route path="/solucao" element={<Solucao />} />
       </Routes>
 
       <Footer />
