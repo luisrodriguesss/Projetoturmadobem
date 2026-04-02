@@ -13,6 +13,7 @@ export default function Header() {
         <Link to="/">Home</Link>
         <Link to="/sobre">Sobre</Link>
         <Link to="/faq">Faq</Link>
+        <Link to="/solucao">Solução</Link>
         <Link to="/contato">Contato</Link>
         <Link to="/integrantes">Quem somos</Link>
       </nav>
