@@ -1,70 +1,94 @@
-# Turma do Bem - Projeto Front-End
+# Turma do Bem — Projeto Front-End
 
-## Descrição
-Este projeto tem como objetivo o desenvolvimento do **site institucional da ONG Turma do Bem**, organização voltada para oferecer triagens e tratamentos odontológicos gratuitos a pessoas em situação de vulnerabilidade social.  
-O site apresenta informações sobre os programas da ONG, seus públicos atendidos, estatísticas de impacto e formas de contato.
+Site institucional desenvolvido para a ONG **Turma do Bem**, organização voltada para oferecer triagens e tratamentos odontológicos gratuitos a pessoas em situação de vulnerabilidade social.
 
-## Estrutura do Projeto
-O projeto é composto por páginas HTML interligadas, estilizadas com CSS externo e scripts simples em JavaScript.  
-
-<<<<<<< HEAD
 ---
 
-## Link do projeto - github
-https://github.com/luisrodriguesss/Projetoturmadobem
+## 🔗 Repositório GitHub
 
-=======
-**Páginas principais:**
-- `index.html` — Página inicial, com apresentação da ONG, áreas de atuação e estatísticas.
-- `pages/sobre.html` — Informações sobre a missão e a história da ONG.
-- `pages/faq.html` — Perguntas frequentes sobre os projetos e funcionamento.
-- `pages/contato.html` — Formulário para contato direto.
-- `pages/quem-somos.html` — Apresentação da equipe e valores institucionais.
+[https://github.com/luisrodriguesss/Projetoturmadobem](https://github.com/luisrodriguesss/Projetoturmadobem)
 
-**Principais diretórios:**
-├── index.html
-├── pages/
-│ ├── sobre.html
-│ ├── faq.html
-│ ├── contato.html
-│ └── quem-somos.html
+---
+
+## 🎥 Vídeo de Apresentação
+
+#
+
+---
+
+## 📋 Descrição do Projeto
+
+O site apresenta informações sobre os programas da ONG, seus públicos atendidos, estatísticas de impacto e formas de contato. A aplicação foi desenvolvida como uma SPA (Single Page Application) com React + Vite + TypeScript, garantindo navegação fluida e componentização moderna.
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+- **React 19** — Interface e componentização
+- **Vite 8** — Build e performance
+- **TypeScript** — Tipagem estática obrigatória
+- **Tailwind CSS 4** — Estilização responsiva
+- **React Router DOM 7** — Navegação entre páginas (SPA)
+- **React Hook Form** — Validação de formulários
+
+---
+
+## 📁 Estrutura de Pastas
+
+```
+projetoturmadobem/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── components/
+│   │   ├── Header.tsx
+│   │   └── Footer.tsx
+│   ├── pages/
+│   │   ├── Home.tsx
+│   │   ├── Sobre.tsx
+│   │   ├── Solucao.tsx
+│   │   ├── Faq.tsx
+│   │   ├── Contato.tsx
+│   │   ├── Integrantes.tsx
+│   │   └── IntegranteDetalhe.tsx
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css
 ├── estilo/
-│ ├── style.css
-│ ├── style.js
-│ └── img/
-│ ├── logo.png
-│ ├── imagem-dentista.png
-│ ├── imagem-apolonias.png
-│ └── img1.png
+│   └── img/
+├── index.html
+├── package.json
+├── vite.config.ts
+└── README.md
+```
 
 
-## Funcionalidades
-- Layout responsivo com HTML5 e CSS3.  
-- Navegação clara e intuitiva entre páginas.  
-- Seção de estatísticas com dados sobre o impacto social da ONG.  
-- Barra de pesquisa funcional no cabeçalho.  
-- Design coerente com as cores e identidade visual da ONG.  
+## 📄 Páginas do Projeto
 
-## Tecnologias Utilizadas
-- **HTML5** — Estrutura semântica das páginas.  
-- **CSS3 (Flexbox e Grid)** — Estilização e responsividade.  
-- **JavaScript (básico)** — Interatividade e elementos dinâmicos.  
+| Rota | Página |
+|------|--------|
+| `/` | Home |
+| `/sobre` | Sobre o Projeto |
+| `/solucao` | Solução do Projeto |
+| `/faq` | Perguntas Frequentes |
+| `/contato` | Contato |
+| `/integrantes` | Quem Somos |
+| `/integrantes/:id` | Detalhe do Integrante |
 
-## Instruções de Uso
-1. Clone ou baixe este repositório em seu computador.  
-2. Mantenha a estrutura de pastas conforme o projeto.  
-3. Abra o arquivo `index.html` em qualquer navegador moderno.  
+---
 
-## Requisitos
-- Navegador atualizado (Google Chrome, Firefox, Edge ou Safari).  
-- Conexão local com os arquivos de estilo e script (sem necessidade de servidor).
+## 👥 Integrantes
 
-## Nosso Time 
-- git hub 
-https://github.com/luisrodriguesss - Luis Rodrigues 1TDSPB rm567918 
-https://github.com/luizkichimoto - Luiz Kichimoto 1TDSPB rm567726
-https://github.com/GabrielCreates - Gabriel Rocha 1TDSPB rm567023
+| Nome | RM | Turma | GitHub | LinkedIn |
+|------|----|-------|--------|----------|
+| Luis Fillipe Seripieri | 567918 | 1TDSPB | [luisrodriguesss](https://github.com/luisrodriguesss) | [Ver perfil](https://www.linkedin.com/in/luis-seripieri-1bb360395/) |
+| Luiz Felipe Kichimoto | 567726 | 1TDSPB | [luizkichimoto](https://github.com/luizkichimoto) | [Ver perfil](https://www.linkedin.com/feed/) |
+| Gabriel Rocha Souza | 567023 | 1TDSPB | [GabrielCreates](https://github.com/GabrielCreates) | [Ver perfil](https://www.linkedin.com/feed/) |
 
-## Link do nosso repositório 
-https://github.com/luisrodriguesss/Projetoturmadobem
->>>>>>> main
+---
+
+## 📬 Contato
+
+- **Instagram:** [@ongturmadobem](https://www.instagram.com/ongturmadobem)
+- **Email:** contato@turmadobem.org.br
+- **Telefone:** (11) 5084-7276
