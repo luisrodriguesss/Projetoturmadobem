@@ -1,6 +1,8 @@
 export default function Sobre() {
+  
   return (
     <main className="px-[5%] py-8">
+
       <section className="mb-12 bg-white rounded-2xl shadow-sm p-8">
         <h2 className="text-[#f97316] text-2xl font-semibold mb-4 border-l-[6px] border-[#a3c23e] pl-2">
           Sobre o Projeto
@@ -10,14 +12,17 @@ export default function Sobre() {
           vulnerabilidade social. Entretanto, um dos principais desafios enfrentados pela equipe é a falta de
           integração entre seus canais de comunicação e controle de cadastros.
         </p>
+
         <p className="mt-2">
           Atualmente, os contatos com pacientes, voluntários e doadores são feitos por diferentes meios, o que
           gera dificuldade de organização, perda de informações e lentidão nos atendimentos.
         </p>
+
         <p className="mt-2">
           Além disso, a ausência de um sistema unificado impede que a ONG acompanhe com eficiência o progresso dos
           atendimentos e a origem das doações. O site proposto vem justamente para resolver esse problema.
         </p>
+
         <p className="mt-2">
           Através de uma plataforma web centralizada, todos os públicos da ONG poderão se conectar em um único
           ambiente digital.
@@ -28,10 +33,12 @@ export default function Sobre() {
         <h2 className="text-[#f97316] text-2xl font-semibold mb-4 border-l-[6px] border-[#a3c23e] pl-2">
           Ideia
         </h2>
+
         <p className="mt-2">
           O objetivo é tornar a experiência do visitante informativa, acolhedora e visualmente alinhada com a
           identidade da ONG, destacando o compromisso com a transformação de vidas por meio do cuidado odontológico.
         </p>
+        
         <p className="mt-2">
           O usuário pode conhecer um pouco do projeto e proposta da ONG Turma do Bem e podendo tirar algumas
           dúvidas frequentes pela aba de FAQ.
