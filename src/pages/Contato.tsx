@@ -1,5 +1,8 @@
 import { useForm } from "react-hook-form"
 
+// Componente responsável por gerenciar o formulário de contato da ONG,
+// incluindo validação dos campos e envio das informações do usuário.
+
 type DadosContato = {
   nome: string
   email: string
