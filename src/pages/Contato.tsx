@@ -1,5 +1,8 @@
 import { useForm } from "react-hook-form"
 
+// Componente responsável por gerenciar o formulário de contato da ONG,
+// incluindo validação dos campos e envio das informações do usuário.
+
 type DadosContato = {
   nome: string
   email: string
@@ -37,7 +40,7 @@ export default function Contato() {
           </a>
           <p>Email: contato@turmadobem.org.br</p>
           <p>Telefone: (11) 5084-7276</p>
-          <p>Endereço: Rua xxxxxxxxxxx, 100 — São Paulo, SP</p>
+          <p>Endereço: 449 (Rua Maurício Francisco Klabin), São Paulo, SP, 04120-020</p>
         </nav>
       </section>
 

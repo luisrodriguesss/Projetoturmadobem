@@ -2,14 +2,17 @@ export default function Solucao() {
   return (
     <main className="px-[5%] py-8">
       <section className="mb-12 bg-white rounded-2xl shadow-sm p-8">
+      
         <h2 className="text-[#f97316] text-2xl font-semibold mb-4 border-l-[6px] border-[#a3c23e] pl-2">
           Solução do Projeto
         </h2>
+
         <p className="mt-2">
           A solução desenvolvida é uma plataforma web centralizada para a ONG Turma do Bem,
           criada com o objetivo de integrar todos os públicos da organização — pacientes,
           voluntários e doadores — em um único ambiente digital acessível e intuitivo.
         </p>
+
         <p className="mt-2">
           O projeto resolve a falta de comunicação e organização que a ONG enfrentava ao
           utilizar múltiplos canais desconectados, centralizando informações e facilitando
@@ -21,17 +24,20 @@ export default function Solucao() {
         <h2 className="text-[#f97316] text-2xl font-semibold mb-4 border-l-[6px] border-[#a3c23e] pl-2">
           Problema Identificado
         </h2>
+
         <div className="mt-5">
           <h3 className="text-xl font-semibold">Fragmentação dos Canais</h3>
           <aside className="bg-[#f8f9fa] p-4 rounded-lg mt-3">
             <p>Os contatos com pacientes, voluntários e doadores eram realizados por diferentes meios, gerando dificuldade de organização e perda de informações importantes.</p>
           </aside>
+
         </div>
         <div className="mt-5">
           <h3 className="text-xl font-semibold">Ausência de Sistema Unificado</h3>
           <aside className="bg-[#f8f9fa] p-4 rounded-lg mt-3">
             <p>A falta de uma plataforma central impedia que a ONG acompanhasse com eficiência o progresso dos atendimentos e a origem das doações recebidas.</p>
           </aside>
+
         </div>
         <div className="mt-5">
           <h3 className="text-xl font-semibold">Dificuldade de Acesso à Informação</h3>
