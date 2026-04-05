@@ -50,11 +50,12 @@ export default function Sobre() {
           Tecnologias Utilizadas
         </h2>
         <ul className="list-disc pl-6 mt-2 space-y-1">
-          <li>HTML5 — estrutura semântica do conteúdo.</li>
-          <li>CSS3 — estilização visual baseada nas cores do logotipo oficial.</li>
-          <li>Flexbox — estilização feita usando flexbox.</li>
-          <li>Transition — utilização de transições no header e estatísticas.</li>
-          <li>Design simples — padronização de espaçamentos e tipografia.</li>
+          <li>React 19 — interface e componentização com arquitetura moderna.</li>
+          <li>Vite — build rápido e ambiente de desenvolvimento otimizado.</li>
+          <li>TypeScript — tipagem estática para código mais seguro e escalável.</li>
+          <li>Tailwind CSS — estilização responsiva com classes utilitárias.</li>
+          <li>React Router DOM — navegação entre páginas como SPA.</li>
+          <li>React Hook Form — validação de formulários com performance otimizada.</li>
         </ul>
       </section>
 

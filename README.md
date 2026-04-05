@@ -4,36 +4,36 @@ Site institucional desenvolvido para a ONG **Turma do Bem**, organização volta
 
 ---
 
-## 🔗 Repositório GitHub
+## Repositório GitHub
 
 [https://github.com/luisrodriguesss/Projetoturmadobem](https://github.com/luisrodriguesss/Projetoturmadobem)
 
 ---
 
-## 🎥 Vídeo de Apresentação
+## Vídeo de Apresentação
 
-#
+[Assistir no YouTube](https://www.youtube.com/watch?v=SEU_ID_AQUI)
 
 ---
 
-## 📋 Descrição do Projeto
+## Descrição do Projeto
 
 O site apresenta informações sobre os programas da ONG, seus públicos atendidos, estatísticas de impacto e formas de contato. A aplicação foi desenvolvida como uma SPA (Single Page Application) com React + Vite + TypeScript, garantindo navegação fluida e componentização moderna.
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **React 19** — Interface e componentização
-- **Vite 8** — Build e performance
+- **Vite** — Build e performance
 - **TypeScript** — Tipagem estática obrigatória
-- **Tailwind CSS 4** — Estilização responsiva
-- **React Router DOM 7** — Navegação entre páginas (SPA)
+- **Tailwind CSS** — Estilização responsiva
+- **React Router DOM** — Navegação entre páginas (SPA)
 - **React Hook Form** — Validação de formulários
 
 ---
 
-## 📁 Estrutura de Pastas
+## Estrutura de Pastas
 
 ```
 projetoturmadobem/
@@ -62,8 +62,9 @@ projetoturmadobem/
 └── README.md
 ```
 
+---
 
-## 📄 Páginas do Projeto
+## Páginas do Projeto
 
 | Rota | Página |
 |------|--------|
@@ -77,7 +78,29 @@ projetoturmadobem/
 
 ---
 
-## 👥 Integrantes
+## Como Executar Localmente
+
+**Pré-requisitos:** Node.js instalado
+
+```bash
+# Clone o repositório
+git clone https://github.com/luisrodriguesss/Projetoturmadobem
+
+# Acesse a pasta do projeto
+cd Projetoturmadobem
+
+# Instale as dependências
+npm install
+
+# Inicie o servidor de desenvolvimento
+npm run dev
+```
+
+Acesse no navegador: [http://localhost:5173](http://localhost:5173)
+
+---
+
+## Integrantes
 
 | Nome | RM | Turma | GitHub | LinkedIn |
 |------|----|-------|--------|----------|
@@ -85,9 +108,16 @@ projetoturmadobem/
 | Luiz Felipe Kichimoto | 567726 | 1TDSPB | [luizkichimoto](https://github.com/luizkichimoto) | [Ver perfil](https://www.linkedin.com/feed/) |
 | Gabriel Rocha Souza | 567023 | 1TDSPB | [GabrielCreates](https://github.com/GabrielCreates) | [Ver perfil](https://www.linkedin.com/feed/) |
 
+### Fotos
+
+
+| Luis Fillipe | Luiz Kichimoto | Gabriel Rocha |
+|:---:|:---:|:---:|
+| ![Luis](./estilo/img/fotoluis.png) | ![Kichimoto](./estilo/img/fotokichimoto.png) | ![Gabriel](./estilo/img/fotogabriel.png) |
+
 ---
 
-## 📬 Contato
+## Contato
 
 - **Instagram:** [@ongturmadobem](https://www.instagram.com/ongturmadobem)
 - **Email:** contato@turmadobem.org.br
