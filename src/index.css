@@ -5,17 +5,4 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1300px;
-
-  --color-laranja: #f97316;
-  --color-verde: #a3c23e;
-  --color-cinza-claro: #f8f9fa;
-  --color-cinza: #e0e0e0;
-  --color-texto: #222222;
-}
-
-body {
-  margin: 0;
-  background-color: #f8f9fa;
-  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
-  color: #222;
 }

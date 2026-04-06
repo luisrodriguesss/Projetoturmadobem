@@ -14,19 +14,19 @@ import Solucao from "./pages/Solucao"
 function App() {
   return (
     <BrowserRouter>
-      <Header />
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/sobre" element={<Sobre />} />
-        <Route path="/faq" element={<Faq />} />
-        <Route path="/contato" element={<Contato />} />
-        <Route path="/integrantes" element={<Integrantes />} />
-        <Route path="/integrantes/:id" element={<IntegranteDetalhe />} />
-        <Route path="/solucao" element={<Solucao />} />
-      </Routes>
-
-      <Footer />
+      <div className="min-h-screen bg-[#f8f9fa] font-sans text-[#222]">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/sobre" element={<Sobre />} />
+          <Route path="/faq" element={<Faq />} />
+          <Route path="/contato" element={<Contato />} />
+          <Route path="/integrantes" element={<Integrantes />} />
+          <Route path="/integrantes/:id" element={<IntegranteDetalhe />} />
+          <Route path="/solucao" element={<Solucao />} />
+        </Routes>
+        <Footer />
+      </div>
     </BrowserRouter>
   )
 }
