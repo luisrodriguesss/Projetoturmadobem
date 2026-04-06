@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from "react-router-dom"
-import { listaIntegrantes } from "./Integrantes"
+import { listaIntegrantes } from "../pages/listaIntegrantes"
 
 const detalhes: Record<string, { github: string; linkedin: string; descricao: string }> = {
   luis: {

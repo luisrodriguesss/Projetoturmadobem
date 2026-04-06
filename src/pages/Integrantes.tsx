@@ -1,21 +1,5 @@
 import { useNavigate } from "react-router-dom"
-import luis from "../../estilo/img/fotoluis.png"
-import kichimoto from "../../estilo/img/fotokichimoto.png"
-import gabriel from "../../estilo/img/fotogabriel.png"
-
-type Integrante = {
-  id: string
-  nome: string
-  rm: string
-  turma: string
-  foto: string
-}
-
-export const listaIntegrantes: Integrante[] = [
-  { id: "luis", nome: "Luis Fillipe Seripieri", rm: "RM567918", turma: "1TDSB", foto: luis },
-  { id: "kichimoto", nome: "Luiz Felipe Kichimoto", rm: "RM567726", turma: "1TDSB", foto: kichimoto },
-  { id: "gabriel", nome: "Gabriel Rocha Souza", rm: "RM567023", turma: "1TDSB", foto: gabriel },
-]
+import { listaIntegrantes } from "../pages/listaIntegrantes"
 
 export default function Integrantes() {
   const navegar = useNavigate()
