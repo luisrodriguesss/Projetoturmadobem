@@ -1,6 +1,24 @@
 import { useNavigate } from "react-router-dom"
 import { listaIntegrantes } from "../pages/listaIntegrantes"
 
+function IconeGithub() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+    </svg>
+  )
+}
+
+function IconeLinkedin() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+      <rect x="2" y="9" width="4" height="12" />
+      <circle cx="4" cy="4" r="2" />
+    </svg>
+  )
+}
+
 export default function Integrantes() {
   const navegar = useNavigate()
 
@@ -53,25 +71,28 @@ export default function Integrantes() {
       </section>
 
       <section className="mb-6 bg-white rounded-2xl shadow-sm p-5 md:p-8">
-        <h3 className="text-lg font-semibold mb-3 md:text-xl">Github</h3>
-        <nav className="flex flex-wrap gap-2 text-sm md:text-base">
-          <a href="https://github.com/luisrodriguesss" target="_blank" rel="noreferrer" className="text-[#f97316] hover:underline">luisrodriguesss</a>
-          <span>|</span>
-          <a href="https://github.com/luizkichimoto" target="_blank" rel="noreferrer" className="text-[#f97316] hover:underline">luizkichimoto</a>
-          <span>|</span>
-          <a href="https://github.com/GabrielCreates" target="_blank" rel="noreferrer" className="text-[#f97316] hover:underline">gabrielcreates</a>
-        </nav>
-      </section>
+        <h3 className="text-lg font-semibold mb-4 md:text-xl">Redes Sociais</h3>
+        <div className="flex flex-col gap-3 text-sm md:text-base">
+          <a href="https://github.com/luisrodriguesss" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-[#f97316] hover:underline">
+            <IconeGithub /> luisrodriguesss
+          </a>
+          <a href="https://github.com/luizkichimoto" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-[#f97316] hover:underline">
+            <IconeGithub /> luizkichimoto
+          </a>
+          <a href="https://github.com/GabrielCreates" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-[#f97316] hover:underline">
+            <IconeGithub /> gabrielcreates
+          </a>
 
-      <section className="mb-8 bg-white rounded-2xl shadow-sm p-5 md:p-8">
-        <h3 className="text-lg font-semibold mb-3 md:text-xl">Linkedin</h3>
-        <nav className="flex flex-wrap gap-2 text-sm md:text-base">
-          <a href="https://www.linkedin.com/in/luis-seripieri-1bb360395/" target="_blank" rel="noreferrer" className="text-[#0A66C2] hover:underline">Luis Rodrigues</a>
-          <span>|</span>
-          <a href="https://www.linkedin.com/feed/" target="_blank" rel="noreferrer" className="text-[#0A66C2] hover:underline">Luiz Kichimoto</a>
-          <span>|</span>
-          <a href="https://www.linkedin.com/feed/" target="_blank" rel="noreferrer" className="text-[#0A66C2] hover:underline">Gabriel Rocha</a>
-        </nav>
+          <a href="https://www.linkedin.com/in/luis-seripieri-1bb360395/" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-[#0A66C2] hover:underline">
+            <IconeLinkedin /> Luis Rodrigues
+          </a>
+          <a href="https://www.linkedin.com/feed/" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-[#0A66C2] hover:underline">
+            <IconeLinkedin /> Luiz Kichimoto
+          </a>
+          <a href="https://www.linkedin.com/feed/" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-[#0A66C2] hover:underline">
+            <IconeLinkedin /> Gabriel Rocha
+          </a>
+        </div>
       </section>
     </main>
   )
