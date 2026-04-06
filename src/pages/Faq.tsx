@@ -42,12 +42,12 @@ export default function Faq() {
   }
 
   return (
-    <main className="px-[5%] py-8">
-      <section className="mb-12 bg-white rounded-2xl shadow-sm p-8">
-        <h2 className="text-[#f97316] text-2xl font-semibold mb-4 border-l-[6px] border-[#a3c23e] pl-2">
+    <main className="px-4 py-6 md:px-[5%] md:py-8 xl:px-[12%] xl:py-12">
+      <section className="mb-8 bg-white rounded-2xl shadow-sm p-5 md:p-8 xl:p-12">
+        <h2 className="text-[#f97316] text-xl font-semibold mb-4 border-l-[6px] border-[#a3c23e] pl-2 md:text-2xl">
           Perguntas Frequentes (FAQ)
         </h2>
-        <p className="mb-6">
+        <p className="mb-6 text-sm md:text-base">
           Confira abaixo as respostas para as principais dúvidas sobre a Turma do Bem e nossos programas.
         </p>
 
@@ -55,14 +55,13 @@ export default function Faq() {
           <div key={item.id} className="mb-4">
             <h3
               onClick={() => alternarPergunta(item.id)}
-              className="text-xl font-semibold mt-5 cursor-pointer hover:text-[#f97316] transition-colors duration-300"
+              className="text-base font-semibold mt-5 cursor-pointer hover:text-[#f97316] transition-colors duration-300 md:text-xl"
             >
               {item.pergunta}
             </h3>
-
             {aberta === item.id && (
               <aside className="bg-[#f8f9fa] p-4 rounded-lg mt-3">
-                <p>{item.resposta}</p>
+                <p className="text-sm md:text-base">{item.resposta}</p>
               </aside>
             )}
           </div>

@@ -1,8 +1,5 @@
 import { useForm } from "react-hook-form"
 
-// Componente responsável por gerenciar o formulário de contato da ONG,
-// incluindo validação dos campos e envio das informações do usuário.
-
 type DadosContato = {
   nome: string
   email: string
@@ -24,12 +21,12 @@ export default function Contato() {
   }
 
   return (
-    <main className="px-[5%] py-8">
-      <section className="mb-12 bg-white rounded-2xl shadow-sm p-8">
-        <h2 className="text-[#f97316] text-2xl font-semibold mb-4 border-l-[6px] border-[#a3c23e] pl-2">
+    <main className="px-4 py-6 md:px-[5%] md:py-8 xl:px-[12%] xl:py-12">
+      <section className="mb-8 bg-white rounded-2xl shadow-sm p-5 md:p-8">
+        <h2 className="text-[#f97316] text-xl font-semibold mb-4 border-l-[6px] border-[#a3c23e] pl-2 md:text-2xl">
           Meios de contato
         </h2>
-        <nav className="flex flex-col gap-2 mt-2">
+        <nav className="flex flex-col gap-2 mt-2 text-sm md:text-base">
           <a
             href="https://www.instagram.com/ongturmadobem"
             target="_blank"
@@ -40,18 +37,18 @@ export default function Contato() {
           </a>
           <p>Email: contato@turmadobem.org.br</p>
           <p>Telefone: (11) 5084-7276</p>
-          <p>Endereço: 449 (Rua Maurício Francisco Klabin), São Paulo, SP, 04120-020</p>
+          <p>Endereço: Rua xxxxxxxxxxx, 100 — São Paulo, SP</p>
         </nav>
       </section>
 
-      <section className="bg-white rounded-2xl shadow-sm p-8 max-w-[600px] mx-auto">
-        <h2 className="text-[#f97316] text-2xl font-semibold mb-6 text-center">
+      <section className="bg-white rounded-2xl shadow-sm p-5 w-full md:p-8 md:max-w-[500px] md:mx-auto lg:max-w-[600px]">
+        <h2 className="text-[#f97316] text-xl font-semibold mb-6 text-center md:text-2xl">
           Entre em contato
         </h2>
 
         <form onSubmit={handleSubmit(aoEnviar)} className="flex flex-col gap-4">
           <div className="flex flex-col gap-1">
-            <label htmlFor="nome" className="font-medium text-[#222]">Nome:</label>
+            <label htmlFor="nome" className="font-medium text-[#222] text-sm md:text-base">Nome:</label>
             <input
               id="nome"
               type="text"
@@ -62,7 +59,7 @@ export default function Contato() {
           </div>
 
           <div className="flex flex-col gap-1">
-            <label htmlFor="email" className="font-medium text-[#222]">Email:</label>
+            <label htmlFor="email" className="font-medium text-[#222] text-sm md:text-base">Email:</label>
             <input
               id="email"
               type="email"
@@ -79,7 +76,7 @@ export default function Contato() {
           </div>
 
           <div className="flex flex-col gap-1">
-            <label htmlFor="telefone" className="font-medium text-[#222]">Telefone:</label>
+            <label htmlFor="telefone" className="font-medium text-[#222] text-sm md:text-base">Telefone:</label>
             <input
               id="telefone"
               type="tel"
@@ -89,7 +86,7 @@ export default function Contato() {
           </div>
 
           <div className="flex flex-col gap-1">
-            <label htmlFor="mensagem" className="font-medium text-[#222]">Mensagem:</label>
+            <label htmlFor="mensagem" className="font-medium text-[#222] text-sm md:text-base">Mensagem:</label>
             <textarea
               id="mensagem"
               rows={5}
