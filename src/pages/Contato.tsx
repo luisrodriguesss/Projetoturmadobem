@@ -37,7 +37,7 @@ export default function Contato() {
           </a>
           <p>Email: contato@turmadobem.org.br</p>
           <p>Telefone: (11) 5084-7276</p>
-          <p>Endereço: Rua xxxxxxxxxxx, 100 — São Paulo, SP</p>
+          <p>Endereço: Rua R. Maurício Francisco Klabin, 449 — São Paulo, SP</p>
         </nav>
       </section>
 
