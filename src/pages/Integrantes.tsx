@@ -72,26 +72,32 @@ export default function Integrantes() {
 
       <section className="mb-6 bg-white rounded-2xl shadow-sm p-5 md:p-8">
         <h3 className="text-lg font-semibold mb-4 md:text-xl">Redes Sociais</h3>
-        <div className="flex flex-col gap-3 text-sm md:text-base">
-          <a href="https://github.com/luisrodriguesss" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-[#f97316] hover:underline">
-            <IconeGithub /> luisrodriguesss
-          </a>
-          <a href="https://github.com/luizkichimoto" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-[#f97316] hover:underline">
-            <IconeGithub /> luizkichimoto
-          </a>
-          <a href="https://github.com/GabrielCreates" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-[#f97316] hover:underline">
-            <IconeGithub /> gabrielcreates
-          </a>
+        <div className="grid grid-cols-2 gap-x-8 gap-y-3 text-sm md:text-base">
+          <div className="flex flex-col gap-3">
+            <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider">GitHub</p>
+            <a href="https://github.com/luisrodriguesss" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-[#f97316] hover:underline">
+              <IconeGithub /> luisrodriguesss
+            </a>
+            <a href="https://github.com/luizkichimoto" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-[#f97316] hover:underline">
+              <IconeGithub /> luizkichimoto
+            </a>
+            <a href="https://github.com/GabrielCreates" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-[#f97316] hover:underline">
+              <IconeGithub /> gabrielcreates
+            </a>
+          </div>
 
-          <a href="https://www.linkedin.com/in/luis-seripieri-1bb360395/" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-[#0A66C2] hover:underline">
-            <IconeLinkedin /> Luis Rodrigues
-          </a>
-          <a href="https://www.linkedin.com/feed/" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-[#0A66C2] hover:underline">
-            <IconeLinkedin /> Luiz Kichimoto
-          </a>
-          <a href="https://www.linkedin.com/feed/" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-[#0A66C2] hover:underline">
-            <IconeLinkedin /> Gabriel Rocha
-          </a>
+          <div className="flex flex-col gap-3">
+            <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider">LinkedIn</p>
+            <a href="https://www.linkedin.com/in/luis-seripieri-1bb360395/" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-[#0A66C2] hover:underline">
+              <IconeLinkedin /> Luis Rodrigues
+            </a>
+            <a href="https://www.linkedin.com/feed/" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-[#0A66C2] hover:underline">
+              <IconeLinkedin /> Luiz Kichimoto
+            </a>
+            <a href="https://www.linkedin.com/feed/" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-[#0A66C2] hover:underline">
+              <IconeLinkedin /> Gabriel Rocha
+            </a>
+          </div>
         </div>
       </section>
     </main>
