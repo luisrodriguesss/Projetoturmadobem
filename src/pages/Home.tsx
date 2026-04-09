@@ -42,76 +42,119 @@ export default function Home() {
 
   return (
     <main className="px-4 py-6 md:px-[5%] md:py-8 xl:px-[12%] xl:py-12">
-      <section className="mb-8 bg-white rounded-2xl shadow-sm p-5 md:p-8 xl:p-12">
-        <h2 className="text-[#f97316] text-xl font-semibold mb-4 border-l-[6px] border-[#a3c23e] pl-2 md:text-2xl xl:text-3xl">
-          Transformando sorrisos, mudando vidas.
-        </h2>
-        <img
-          src={img1}
-          alt="imagem turma do bem"
-          className="block w-full max-w-full mx-auto my-4 rounded-xl shadow-md md:max-w-[800px] xl:max-w-[900px]"
-        />
-        <aside className="bg-[#f8f9fa] p-4 rounded-lg mt-3">
-          <p className="text-sm md:text-base">
-            A Turma do Bem oferece triagens e tratamentos odontológicos gratuitos para pessoas em vulnerabilidade social.
-          </p>
-        </aside>
-      </section>
 
-      <section className="mb-8 bg-white rounded-2xl shadow-sm p-5 md:p-8 xl:p-12">
-        <h2 className="text-[#f97316] text-xl font-semibold mb-4 border-l-[6px] border-[#a3c23e] pl-2 md:text-2xl">
-          Aqueles que transformamos com nosso trabalho
-        </h2>
-        <h3 className="text-lg font-semibold mt-5 md:text-xl">Crianças de 11 a 17 anos</h3>
-        <aside className="bg-[#f8f9fa] p-4 rounded-lg mt-3">
-          <p className="text-sm md:text-base">Jovens em situação de vulnerabilidade social, sem condições financeiras para arcar com os custos do tratamento que possuem problemas bucais graves.</p>
-        </aside>
-        <h3 className="text-lg font-semibold mt-5 md:text-xl">Mulheres trans e cis</h3>
-        <aside className="bg-[#f8f9fa] p-4 rounded-lg mt-3">
-          <p className="text-sm md:text-base">Mulheres vítimas de violência, com dentição afetada pelas agressões sofridas.</p>
-        </aside>
-      </section>
-
-      <section className="mb-8 bg-white rounded-2xl shadow-sm p-5 md:p-8 xl:p-12">
-        <h2 className="text-[#f97316] text-xl font-semibold mb-4 border-l-[6px] border-[#a3c23e] pl-2 md:text-2xl">
-          Nossas linhas de atuação
-        </h2>
-        <h3 className="text-lg font-semibold mt-5 md:text-xl">Dentista do Bem</h3>
-        <aside className="bg-[#f8f9fa] p-4 rounded-lg mt-3">
-          <p className="text-sm md:text-base">O Dentista do Bem é o principal programa da Turma do Bem. Ele nasceu para cuidar de crianças e adolescentes entre 11 e 17 anos que vivem em situação de vulnerabilidade social.</p>
-        </aside>
-        <img src={dentista} alt="Imagem Dentista" className="block w-full max-w-full mx-auto my-4 rounded-xl shadow-md md:max-w-[80%] xl:max-w-[600px]" />
-
-        <h3 className="text-lg font-semibold mt-5 md:text-xl">Apolônias do Bem</h3>
-        <aside className="bg-[#f8f9fa] p-4 rounded-lg mt-3">
-          <p className="text-sm md:text-base">O Apolônias do Bem oferece tratamento odontológico gratuito para mulheres cis e trans que tiveram seus sorrisos afetados por situações de violência.</p>
-        </aside>
-        <img src={apolonias} alt="Imagem Apolonias" className="block w-full max-w-full mx-auto my-4 rounded-xl shadow-md md:max-w-[80%] xl:max-w-[600px]" />
-      </section>
-
-      <section className="mb-8 bg-white rounded-2xl shadow-sm p-5 md:p-8 xl:p-12">
-        <h2 className="text-[#f97316] text-xl font-semibold mb-4 border-l-[6px] border-[#a3c23e] pl-2 md:text-2xl">
-          Turma do Bem — Estatísticas
-        </h2>
-        <div className="text-center">
-          <button
-            onClick={() => setMostrarEstatisticas(!mostrarEstatisticas)}
-            className="mb-6 px-5 py-2 bg-[#a3c23e] text-white rounded-lg font-semibold hover:bg-[#f97316] transition-colors duration-300"
-          >
-            {mostrarEstatisticas ? "Ocultar Estatísticas" : "Mostrar Estatísticas"}
-          </button>
-
-          {mostrarEstatisticas && (
-            <div className="flex flex-col gap-3 items-center sm:flex-row sm:flex-wrap sm:justify-center sm:gap-4">
-              {estatisticas.map((stat, indice) => (
-                <p key={stat.id} className="text-base font-bold bg-[#f8f9fa] px-4 py-3 rounded-lg hover:bg-[#f97316] hover:text-white transition-colors duration-300 cursor-default w-full sm:w-auto md:text-lg">
-                  {stat.sufixo}{contadores[indice].toLocaleString("pt-BR")} {stat.texto}
-                </p>
-              ))}
-            </div>
-          )}
+      {/* Hero */}
+      <section className="mb-8 bg-white rounded-2xl shadow-sm overflow-hidden">
+        <div className="flex flex-col md:flex-row">
+          <div className="flex flex-col justify-center p-8 md:w-1/2 xl:p-12">
+            <span className="text-[#a3c23e] font-semibold text-sm uppercase tracking-widest mb-3">ONG Turma do Bem</span>
+            <h1 className="text-3xl font-bold text-[#222] leading-tight mb-4 md:text-4xl xl:text-5xl">
+              Transformando <span className="text-[#f97316]">sorrisos,</span> mudando vidas.
+            </h1>
+            <p className="text-gray-500 text-sm md:text-base leading-relaxed">
+              A Turma do Bem oferece triagens e tratamentos odontológicos gratuitos para pessoas em situação de vulnerabilidade social.
+            </p>
+          </div>
+          <div className="md:w-1/2">
+            <img
+              src={img1}
+              alt="Turma do Bem"
+              className="w-full h-full object-cover max-h-[350px] md:max-h-full"
+            />
+          </div>
         </div>
       </section>
+
+      {/* Públicos atendidos */}
+      <section className="mb-8 bg-white rounded-2xl shadow-sm p-6 md:p-8">
+        <h2 className="text-[#f97316] text-xl font-semibold mb-6 border-l-[6px] border-[#a3c23e] pl-3 md:text-2xl">
+          Aqueles que transformamos com nosso trabalho
+        </h2>
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <div className="bg-[#f8f9fa] rounded-xl p-5 border-l-4 border-[#a3c23e]">
+            <h3 className="text-base font-semibold text-[#222] mb-2 md:text-lg">Crianças de 11 a 17 anos</h3>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              Jovens em situação de vulnerabilidade social, sem condições financeiras para arcar com os custos do tratamento que possuem problemas bucais graves.
+            </p>
+          </div>
+          <div className="bg-[#f8f9fa] rounded-xl p-5 border-l-4 border-[#f97316]">
+            <h3 className="text-base font-semibold text-[#222] mb-2 md:text-lg">Mulheres trans e cis</h3>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              Mulheres vítimas de violência, com dentição afetada pelas agressões sofridas.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Linhas de atuação */}
+      <section className="mb-8 bg-white rounded-2xl shadow-sm p-6 md:p-8">
+        <h2 className="text-[#f97316] text-xl font-semibold mb-6 border-l-[6px] border-[#a3c23e] pl-3 md:text-2xl">
+          Nossas linhas de atuação
+        </h2>
+
+        <div className="flex flex-col gap-8">
+          {/* Dentista do Bem */}
+          <div className="flex flex-col gap-4 md:flex-row md:items-center md:gap-8">
+            <div className="md:w-1/2">
+              <h3 className="text-lg font-semibold text-[#222] mb-2">Dentista do Bem</h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                O Dentista do Bem é o principal programa da Turma do Bem. Ele nasceu para cuidar de crianças e adolescentes entre 11 e 17 anos que vivem em situação de vulnerabilidade social.
+              </p>
+            </div>
+            <img
+              src={dentista}
+              alt="Dentista do Bem"
+              className="w-full rounded-xl shadow-md object-cover md:w-1/2 max-h-[250px]"
+            />
+          </div>
+
+          <div className="w-full h-px bg-gray-100" />
+
+          {/* Apolônias do Bem */}
+          <div className="flex flex-col gap-4 md:flex-row-reverse md:items-center md:gap-8">
+            <div className="md:w-1/2">
+              <h3 className="text-lg font-semibold text-[#222] mb-2">Apolônias do Bem</h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                O Apolônias do Bem oferece tratamento odontológico gratuito para mulheres cis e trans que tiveram seus sorrisos afetados por situações de violência.
+              </p>
+            </div>
+            <img
+              src={apolonias}
+              alt="Apolônias do Bem"
+              className="w-full rounded-xl shadow-md object-cover md:w-1/2 max-h-[250px]"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Estatísticas */}
+      <section className="mb-8 bg-[#a3c23e] rounded-2xl shadow-sm p-6 md:p-8">
+        <div className="flex flex-col items-start gap-4 md:flex-row md:items-center md:justify-between">
+          <h2 className="text-white text-xl font-semibold md:text-2xl">
+            Nosso Impacto
+          </h2>
+          <button
+            onClick={() => setMostrarEstatisticas(!mostrarEstatisticas)}
+            className="px-4 py-2 bg-white text-[#a3c23e] rounded-full text-sm font-semibold hover:bg-[#f97316] hover:text-white transition-all duration-300"
+          >
+            {mostrarEstatisticas ? "Ocultar" : "Mostrar"}
+          </button>
+        </div>
+
+        {mostrarEstatisticas && (
+          <div className="grid grid-cols-1 gap-4 mt-6 sm:grid-cols-3">
+            {estatisticas.map((stat, indice) => (
+              <div key={stat.id} className="bg-white rounded-xl p-5 text-center shadow-sm">
+                <p className="text-3xl font-bold text-[#f97316] md:text-4xl">
+                  {stat.sufixo}{contadores[indice].toLocaleString("pt-BR")}
+                </p>
+                <p className="text-sm text-gray-500 mt-1">{stat.texto}</p>
+              </div>
+            ))}
+          </div>
+        )}
+      </section>
+
     </main>
   )
 }

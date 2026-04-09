@@ -43,29 +43,42 @@ export default function Faq() {
 
   return (
     <main className="px-4 py-6 md:px-[5%] md:py-8 xl:px-[12%] xl:py-12">
-      <section className="mb-8 bg-white rounded-2xl shadow-sm p-5 md:p-8 xl:p-12">
-        <h2 className="text-[#f97316] text-xl font-semibold mb-4 border-l-[6px] border-[#a3c23e] pl-2 md:text-2xl">
+      <section className="mb-8 bg-white rounded-2xl shadow-sm p-6 md:p-8">
+        <h2 className="text-[#f97316] text-xl font-semibold mb-2 border-l-[6px] border-[#a3c23e] pl-3 md:text-2xl">
           Perguntas Frequentes (FAQ)
         </h2>
-        <p className="mb-6 text-sm md:text-base">
+        <p className="text-gray-500 text-sm mb-6 md:text-base">
           Confira abaixo as respostas para as principais dúvidas sobre a Turma do Bem e nossos programas.
         </p>
 
-        {perguntas.map((item) => (
-          <div key={item.id} className="mb-4">
-            <h3
-              onClick={() => alternarPergunta(item.id)}
-              className="text-base font-semibold mt-5 cursor-pointer hover:text-[#f97316] transition-colors duration-300 md:text-xl"
+        <div className="flex flex-col gap-3">
+          {perguntas.map((item) => (
+            <div
+              key={item.id}
+              className={`rounded-xl border transition-all duration-300 overflow-hidden ${aberta === item.id ? "border-[#a3c23e]" : "border-gray-200"}`}
             >
-              {item.pergunta}
-            </h3>
-            {aberta === item.id && (
-              <aside className="bg-[#f8f9fa] p-4 rounded-lg mt-3">
-                <p className="text-sm md:text-base">{item.resposta}</p>
-              </aside>
-            )}
-          </div>
-        ))}
+              <button
+                onClick={() => alternarPergunta(item.id)}
+                className="w-full flex justify-between items-center px-5 py-4 text-left hover:bg-[#f8f9fa] transition-colors duration-200"
+              >
+                <span className={`text-sm font-semibold md:text-base ${aberta === item.id ? "text-[#f97316]" : "text-[#222]"}`}>
+                  {item.pergunta}
+                </span>
+                <span className={`text-xl font-light ml-4 transition-transform duration-300 ${aberta === item.id ? "text-[#a3c23e] rotate-45" : "text-gray-400"}`}>
+                  +
+                </span>
+              </button>
+
+              {aberta === item.id && (
+                <div className="px-5 pb-4 bg-[#f8f9fa]">
+                  <p className="text-sm text-gray-600 leading-relaxed md:text-base">
+                    {item.resposta}
+                  </p>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
       </section>
     </main>
   )
