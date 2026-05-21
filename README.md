@@ -4,12 +4,13 @@ Site institucional desenvolvido para a ONG **Turma do Bem**, organização volta
 
 ---
 
-## Repositório GitHub
+## 📋 Descrição do Projeto
 
-[https://github.com/luisrodriguesss/Projetoturmadobem](https://github.com/luisrodriguesss/Projetoturmadobem)
+O site apresenta informações sobre os programas da ONG, seus públicos atendidos, estatísticas de impacto e formas de contato. A aplicação foi desenvolvida como uma SPA (Single Page Application) com React + Vite + TypeScript, garantindo navegação fluida e componentização moderna, com integração à API REST desenvolvida em Java com Quarkus e banco de dados Oracle.
 
 ---
 
+<<<<<<< HEAD
 ## Vídeo de Apresentação
 
 [Assistir no YouTube](https://youtu.be/OgqDXRQpVvU?si=xO9nD3qksmjdgsf_)
@@ -23,6 +24,9 @@ O site apresenta informações sobre os programas da ONG, seus públicos atendid
 ---
 
 ## Tecnologias Utilizadas
+=======
+## 🚀 Tecnologias Utilizadas
+>>>>>>> rm567918
 
 - **React 19** — Interface e componentização
 - **Vite** — Build e performance
@@ -30,10 +34,13 @@ O site apresenta informações sobre os programas da ONG, seus públicos atendid
 - **Tailwind CSS** — Estilização responsiva
 - **React Router DOM** — Navegação entre páginas (SPA)
 - **React Hook Form** — Validação de formulários
+- **Fetch API** — Consumo da API REST
+- **Java + Quarkus** — Backend e API REST
+- **Oracle Database** — Banco de dados
 
 ---
 
-## Estrutura de Pastas
+## 📁 Estrutura de Pastas
 
 ```
 projetoturmadobem/
@@ -41,7 +48,11 @@ projetoturmadobem/
 │   └── favicon.svg
 ├── src/
 │   ├── components/
-│   │   ├── Header.tsx
+│   │   ├── Header/
+│   │   │   ├── Header.tsx
+│   │   │   ├── LogoTDB.tsx
+│   │   │   ├── MobileMenu.tsx
+│   │   │   └── NavLinks.tsx
 │   │   └── Footer.tsx
 │   ├── pages/
 │   │   ├── Home.tsx
@@ -50,12 +61,18 @@ projetoturmadobem/
 │   │   ├── Faq.tsx
 │   │   ├── Contato.tsx
 │   │   ├── Integrantes.tsx
-│   │   └── IntegranteDetalhe.tsx
+│   │   ├── IntegranteDetalhe.tsx
+│   │   ├── Beneficiarios.tsx
+│   │   ├── Doadores.tsx
+│   │   └── listaIntegrantes.ts
+│   ├── services/
+│   │   └── api.ts
 │   ├── App.tsx
 │   ├── main.tsx
 │   └── index.css
 ├── estilo/
 │   └── img/
+├── .env
 ├── index.html
 ├── package.json
 ├── vite.config.ts
@@ -64,7 +81,7 @@ projetoturmadobem/
 
 ---
 
-## Páginas do Projeto
+## 📄 Páginas do Projeto
 
 | Rota | Página |
 |------|--------|
@@ -73,14 +90,26 @@ projetoturmadobem/
 | `/solucao` | Solução do Projeto |
 | `/faq` | Perguntas Frequentes |
 | `/contato` | Contato |
+| `/beneficiarios` | Beneficiários |
+| `/doadores` | Doadores |
 | `/integrantes` | Quem Somos |
 | `/integrantes/:id` | Detalhe do Integrante |
 
 ---
 
-## Como Executar Localmente
+## ⚙️ Como Usar
 
-**Pré-requisitos:** Node.js instalado
+### 🔗 Links
+
+| Recurso | URL |
+|---------|-----|
+| 🌐 Site na Vercel | [turmadobem.vercel.app](https://turmadobem.vercel.app) |
+| 📁 Repositório GitHub | [github.com/luisrodriguesss/Projetoturmadobem](https://github.com/luisrodriguesss/Projetoturmadobem) |
+| 🎥 Vídeo no YouTube | [Assistir no YouTube](https://www.youtube.com/watch?v=SEU_ID_AQUI) |
+
+### 💻 Executar Localmente
+
+**Pré-requisitos:** Node.js 18+ e Java 17 instalados.
 
 ```bash
 # Clone o repositório
@@ -96,11 +125,17 @@ npm install
 npm run dev
 ```
 
+**Para rodar a API Java:**
+```bash
+cd "caminho/Sprint4-Java-SorrisodoBem"
+mvn quarkus:dev "-Dquarkus.enforceBuildGoal=false"
+```
+
 Acesse no navegador: [http://localhost:5173](http://localhost:5173)
 
 ---
 
-## Integrantes
+## 👥 Integrantes
 
 | Nome | RM | Turma | GitHub | LinkedIn |
 |------|----|-------|--------|----------|
@@ -110,14 +145,13 @@ Acesse no navegador: [http://localhost:5173](http://localhost:5173)
 
 ### Fotos
 
-
 | Luis Fillipe | Luiz Kichimoto | Gabriel Rocha |
 |:---:|:---:|:---:|
 | ![Luis](./estilo/img/fotoluis.png) | ![Kichimoto](./estilo/img/fotokichimoto.png) | ![Gabriel](./estilo/img/fotogabriel.png) |
 
 ---
 
-## Contato
+## 📬 Contato
 
 - **Instagram:** [@ongturmadobem](https://www.instagram.com/ongturmadobem)
 - **Email:** contato@turmadobem.org.br
