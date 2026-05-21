@@ -10,7 +10,6 @@ O site apresenta informações sobre os programas da ONG, seus públicos atendid
 
 ---
 
-<<<<<<< HEAD
 ## Vídeo de Apresentação
 
 [Assistir no YouTube](https://youtu.be/OgqDXRQpVvU?si=xO9nD3qksmjdgsf_)
@@ -24,9 +23,6 @@ O site apresenta informações sobre os programas da ONG, seus públicos atendid
 ---
 
 ## Tecnologias Utilizadas
-=======
-## 🚀 Tecnologias Utilizadas
->>>>>>> rm567918
 
 - **React 19** — Interface e componentização
 - **Vite** — Build e performance
