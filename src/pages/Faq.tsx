@@ -64,8 +64,8 @@ export default function Faq() {
                 <span className={`text-sm font-semibold md:text-base ${aberta === item.id ? "text-[#f97316]" : "text-[#222]"}`}>
                   {item.pergunta}
                 </span>
-                <span className={`text-xl font-light ml-4 transition-transform duration-300 ${aberta === item.id ? "text-[#a3c23e] rotate-45" : "text-gray-400"}`}>
-                  +
+                <span className={`text-base ml-4 transition-transform duration-300 ${aberta === item.id ? "text-[#a3c23e] rotate-180" : "text-gray-400"}`}>
+                  ▼
                 </span>
               </button>
 
