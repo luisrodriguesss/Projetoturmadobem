@@ -44,6 +44,7 @@ O site apresenta informações sobre os programas da ONG, seus públicos atendid
 ## ▶️ Como Rodar Localmente
 1. Clone o repositório
 2. Execute `npm install`
+3. Execute `npm run dev`
 
 
 
