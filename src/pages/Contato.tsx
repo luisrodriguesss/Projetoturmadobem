@@ -52,7 +52,7 @@ export default function Contato() {
             <input
               id="nome"
               type="text"
-              className="px-3 py-3 border border-[#e0e0e0] rounded-lg text-sm font-[inherit] focus:border-[#f97316] focus:shadow-[0_0_6px_rgba(249,115,22,0.3)] focus:outline-none"
+              className="px-3 py-3 border border-[#e0e0e0] rounded-lg text-sm font-[inherit] shadow-sm focus:border-[#f97316] focus:shadow-[0_0_6px_rgba(249,115,22,0.3)] focus:outline-none"
               {...register("nome", { required: "Este campo é obrigatório" })}
             />
             {errors.nome && <span className="text-red-500 text-sm">{errors.nome.message}</span>}
@@ -63,7 +63,7 @@ export default function Contato() {
             <input
               id="email"
               type="email"
-              className="px-3 py-3 border border-[#e0e0e0] rounded-lg text-sm font-[inherit] focus:border-[#f97316] focus:shadow-[0_0_6px_rgba(249,115,22,0.3)] focus:outline-none"
+              className="px-3 py-3 border border-[#e0e0e0] rounded-lg text-sm font-[inherit] shadow-sm focus:border-[#f97316] focus:shadow-[0_0_6px_rgba(249,115,22,0.3)] focus:outline-none"
               {...register("email", {
                 required: "Este campo é obrigatório",
                 pattern: {
@@ -80,7 +80,7 @@ export default function Contato() {
             <input
               id="telefone"
               type="tel"
-              className="px-3 py-3 border border-[#e0e0e0] rounded-lg text-sm font-[inherit] focus:border-[#f97316] focus:shadow-[0_0_6px_rgba(249,115,22,0.3)] focus:outline-none"
+              className="px-3 py-3 border border-[#e0e0e0] rounded-lg text-sm font-[inherit] shadow-sm focus:border-[#f97316] focus:shadow-[0_0_6px_rgba(249,115,22,0.3)] focus:outline-none"
               {...register("telefone")}
             />
           </div>
@@ -90,7 +90,7 @@ export default function Contato() {
             <textarea
               id="mensagem"
               rows={5}
-              className="px-3 py-3 border border-[#e0e0e0] rounded-lg text-sm font-[inherit] resize-none focus:border-[#f97316] focus:shadow-[0_0_6px_rgba(249,115,22,0.3)] focus:outline-none"
+              className="px-3 py-3 border border-[#e0e0e0] rounded-lg text-sm font-[inherit] resize-none shadow-sm focus:border-[#f97316] focus:shadow-[0_0_6px_rgba(249,115,22,0.3)] focus:outline-none"
               {...register("mensagem", { required: "Este campo é obrigatório" })}
             />
             {errors.mensagem && <span className="text-red-500 text-sm">{errors.mensagem.message}</span>}
