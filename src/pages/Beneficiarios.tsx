@@ -189,7 +189,7 @@ export default function Beneficiarios() {
                     <td className="py-3">
                       <button
                         onClick={() => aoDeletar(b.id)}
-                        className="px-3 py-1 bg-red-100 text-red-600 rounded-lg text-xs font-medium hover:bg-red-200 transition-colors"
+                        className="px-3 py-1 bg-red-500 text-white rounded-lg text-xs font-medium hover:bg-red-600 transition-colors"
                       >
                         Remover
                       </button>
