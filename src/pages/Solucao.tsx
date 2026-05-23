@@ -1,6 +1,6 @@
 export default function Solucao() {
   return (
-    <main className="px-[5%] py-8">
+    <main className="px-4 py-6 md:px-[5%] md:py-8 xl:px-[12%] xl:py-12">
       <section className="mb-12 bg-white rounded-2xl shadow-sm p-8">
       
         <h2 className="text-[#f97316] text-2xl font-semibold mb-4 border-l-[6px] border-[#a3c23e] pl-2">
