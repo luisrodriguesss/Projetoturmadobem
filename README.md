@@ -39,6 +39,14 @@ O site apresenta informações sobre os programas da ONG, seus públicos atendid
 ## 🚀 Deploy
 - Back-end: https://sorriso-do-bem.onrender.com
 - Front-end: https://turmadobem.vercel.app
+---
+
+## ▶️ Como Rodar Localmente
+1. Clone o repositório
+2. Execute `npm install`
+
+
+
 
 ---
 ## 📁 Estrutura de Pastas
