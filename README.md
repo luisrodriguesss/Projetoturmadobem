@@ -10,19 +10,20 @@ O site apresenta informações sobre os programas da ONG, seus públicos atendid
 
 ---
 
-## Vídeo de Apresentação
+## 🖥️ Imagens do Sistema
 
-[Assistir no YouTube](https://youtu.be/OgqDXRQpVvU?si=xO9nD3qksmjdgsf_)
+### Home
+![Home](./docs/screenshot-home.png)
+
+### Beneficiários
+![Beneficiários](./docs/screenshot-beneficiarios.png)
+
+### FAQ
+![FAQ](./docs/screenshot-faq.png)
 
 ---
 
-## Descrição do Projeto
-
-O site apresenta informações sobre os programas da ONG, seus públicos atendidos, estatísticas de impacto e formas de contato. A aplicação foi desenvolvida como uma SPA (Single Page Application) com React + Vite + TypeScript, garantindo navegação fluida e componentização moderna.
-
----
-
-## Tecnologias Utilizadas
+## 🚀 Tecnologias Utilizadas
 
 - **React 19** — Interface e componentização
 - **Vite** — Build e performance
@@ -68,7 +69,12 @@ projetoturmadobem/
 │   └── index.css
 ├── estilo/
 │   └── img/
+├── docs/
+│   ├── screenshot-home.png
+│   ├── screenshot-beneficiarios.png
+│   └── screenshot-faq.png
 ├── .env
+├── vercel.json
 ├── index.html
 ├── package.json
 ├── vite.config.ts
@@ -101,7 +107,7 @@ projetoturmadobem/
 |---------|-----|
 | 🌐 Site na Vercel | [turmadobem.vercel.app](https://turmadobem.vercel.app) |
 | 📁 Repositório GitHub | [github.com/luisrodriguesss/Projetoturmadobem](https://github.com/luisrodriguesss/Projetoturmadobem) |
-| 🎥 Vídeo no YouTube | [Assistir no YouTube](https://www.youtube.com/watch?v=SEU_ID_AQUI) |
+| 🎥 Vídeo no YouTube | [Assistir no YouTube](https://www.youtube.com/watch?v) |
 
 ### 💻 Executar Localmente
 
@@ -121,7 +127,7 @@ npm install
 npm run dev
 ```
 
-**Para rodar a API Java:**
+**Para rodar a API Java localmente:**
 ```bash
 cd "caminho/Sprint4-Java-SorrisodoBem"
 mvn quarkus:dev "-Dquarkus.enforceBuildGoal=false"
